@@ -161,9 +161,25 @@ h3 {
 }
 
 .price {
+    text-align: left;
+    padding: 15px;
 	position: relative;
 	left:-100px;
 	top: 50px;
-	background-color: green;
+    width: 200px;
+    height: 200px;
+    
+background: rgb(30, 50, 230);
+background: -moz-linear-gradient(270deg, rgb(30, 50, 230) 0%, rgb(90, 140, 255) 39%);
+background: -webkit-linear-gradient(270deg, rgb(30, 50, 230) 0%, rgb(90, 140, 255) 39%);
+background: -o-linear-gradient(270deg, rgb(30, 50, 230) 0%, rgb(90, 140, 255) 39%);
+background: -ms-linear-gradient(270deg, rgb(30, 50, 230) 0%, rgb(90, 140, 255) 39%);
+background: linear-gradient(0deg, rgb(30, 50, 230) 0%, rgb(90, 140, 255) 39%);
 }
 
+.price span {
+display: block;}
+
+.price span strong {
+font-size: 30px;
+}
