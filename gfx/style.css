@@ -176,9 +176,6 @@ h3 {
 	font-weight: 400;
 }
 
-.product .frame {
-
-}
 
 .product {
 	display: inline-block;
@@ -209,7 +206,7 @@ h3 {
 
 #footer {
 	display: inline-block;
-	margin-top: -29px;
+	margin-top: -31px;
 	margin-left: 3px;
 }
 
@@ -255,7 +252,7 @@ h3 {
 }
 
 .price span strong {
-	font-size: 34px;
+	font-size: 31px;
 	color: white;
 }
 
@@ -274,10 +271,23 @@ h3 {
 .nuncan {
 	padding: 3px 4px;
 	position: absolute;
-	background: rgb(79,148,225);
-	border-radius: 15px 0px 15px 15px;
-	box-shadow: 0px 0px 0px 4px rgba(51, 51, 51, 0.37);
-	width: 64px;
-	color:white;
+	background: none repeat scroll 0% 0% #456ACF;
+	box-shadow: 0px 0px 0px 2px rgba(51, 51, 51, 0.37);
+	width: 65px;
+	color: #FFF;
 	font-size: 12px;
+	border-radius: 5px 0px 5px 5px;
+	font-family: arial;
+	height: 18px;
 }
+
+.arrow2 {
+	height: 12px;
+	width: auto;
+	position: relative;
+	font-family: Myriad Pro!important;
+	margin-left: -2px;
+}
+
+
+								
