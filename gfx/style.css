@@ -103,6 +103,7 @@ span {
 	margin-top: 15px;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
+    line-height: 17px
 }
 
 #product-desc h2 {
@@ -117,7 +118,7 @@ span {
 	word-spacing: -1px;
 	margin-top: 3px;
 	display: inline-block;
-    margin-bottom: 89px;
+    margin-bottom: 86px;
 }
 
 #product-img {
@@ -147,7 +148,6 @@ span {
 	color: rgb(83,149,208);
 	font-size: 12px;
 	font-family: Arial, sans-serif;
-	margin-right: 10px;
 	margin-top: 9px;
 	letter-spacing: 0px;
 }
