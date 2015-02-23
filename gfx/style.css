@@ -26,6 +26,48 @@ body {
 	background-repeat: no-repeat;
 }
 
+h1 {
+	font-family: Tahoma, sans-serif; 
+	font-size: 55px;
+	font-weight: 400;
+	color:rgb(1,124,175);
+	text-shadow: 2px 2px 3px rgb(200,200,200);
+	letter-spacing: -1.2px;
+}
+
+h2 {
+	color: rgb(137,190,4);
+	font-family: Arial, sans-serif; 
+	font-size: 32px;
+	font-weight: 400;
+	position: relative;
+	width: 500px;
+	line-height: 40px;
+	
+}
+
+h2 span{
+	color: rgb(1,134,182);
+	font-family: Arial, sans-serif; 
+}
+
+h3 {
+	color: rgb(137,190,4);
+	font-family: Arial, sans-serif; 
+	font-size: 16px;
+	font-weight: 400;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(83,149,208);
+}
+
+span {
+	font-family: Arial, sans-serif;
+}
+
+
 #wrapper {
 	width: 810px;
 	background-color: white;
@@ -45,14 +87,7 @@ body {
 	display: inline-block;
 }
 
-h1 {
-	font-family: Tahoma; 
-	font-size: 55px;
-	font-weight: 400;
-	color:rgb(1,124,175);
-	text-shadow: 2px 2px 3px rgb(200,200,200);
-	letter-spacing: -1.2px;
-}
+/* Tootetutvustus */
 
 #description {
 	display: inline-block;
@@ -66,23 +101,8 @@ h1 {
 	display: block;
 	margin-top: 15px;
 	margin-bottom: 82px;
-	font-family: arial;
+	font-family: Arial, sans-serif;
 	font-size: 14px;
-}
-
-h2 {
-	color: rgb(137,190,4);
-	font-family: Arial; 
-	font-size: 32px;
-	font-weight: 400;
-	position: relative;
-	width: 500px;
-	line-height: 40px;
-	
-}
-
-span {
-	font-family: arial;
 }
 
 #description h2 {
@@ -90,11 +110,6 @@ span {
 	margin-right: 5px;
 	letter-spacing: -0.2px;
 	word-spacing: -5px;
-}
-
-h2 span{
-	color: rgb(1,134,182);
-	font-family: Arial; 
 }
 
 .paragraph {
@@ -136,17 +151,19 @@ h2 span{
 	height: 288px;
 }
 
+/* Lingid */
+
 .link {
 	color: rgb(83,149,208);
 	font-size: 12px;
-	font-family: arial;
+	font-family: Arial, sans-serif;
 	margin-right: 10px;
 	margin-top: 10px;
 	letter-spacing: 0px;
 }
 
 .product .link span {
-	font-family: verdana;
+	font-family: Verdana, sans-serif;
 	display: inline-block;
 	font-size: 12px;
 
@@ -160,21 +177,11 @@ h2 span{
 	
 }
 
-a:visited {
-    text-decoration: none;
-    color: rgb(83,149,208);
-}
-
-h3 {
-	color: rgb(137,190,4);
-	font-family: Arial; 
-	font-size: 16px;
-	font-weight: 400;
-}
+/* Tooterea info */
 
 .subheader {
 	color: rgb(1,134,182);
-	font-family: Arial; 
+	font-family: Arial, sans-serif; 
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -193,7 +200,6 @@ h3 {
 .product span {
 
 	display: block;
-	font-smoothing: none;
 }
 
 .product_info {
@@ -207,23 +213,7 @@ h3 {
 	height: 100%;
 }
 
-#footer {
-	display: inline-block;
-	margin-top: -31px;
-	margin-left: 3px;
-}
-
-#footer span {
-	color: rgb(153,153,153);
-	display:block;
-	font-size: 12px;
-}
-
-#footer a {
-	margin-top: 60px;
-	display: block;
-	font-size: 12px;
-}
+/* Laptopi peal olev infobox */
 
 .price {
 	
@@ -271,6 +261,8 @@ h3 {
 
 }
 
+/* Link tooterea pildi peal */
+
 .nuncan {
 	padding: 3px 4px;
 	position: absolute;
@@ -280,7 +272,7 @@ h3 {
 	color: #FFF;
 	font-size: 12px;
 	border-radius: 5px 0px 5px 5px;
-	font-family: arial;
+	font-family: Arial, sans-serif;
 	height: 18px;
 }
 
@@ -288,7 +280,7 @@ h3 {
 	height: 12px;
 	width: auto;
 	position: relative;
-	font-family: Myriad Pro!important;
+	font-family: Arial, sans-serif!important;
 	margin-left: -2px;
 }
 
@@ -296,4 +288,21 @@ h3 {
 	line-height: 12px;
 }
 
+#footer {
+	display: inline-block;
+	margin-top: -31px;
+	margin-left: 3px;
+}
+
+#footer span {
+	color: rgb(153,153,153);
+	display:block;
+	font-size: 12px;
+}
+
+#footer a {
+	margin-top: 60px;
+	display: block;
+	font-size: 12px;
+}
 								
