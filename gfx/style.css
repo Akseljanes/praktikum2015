@@ -14,22 +14,19 @@ html {
 }
 
 body {
-	background: #e3e9f6; /* Old browsers */
-	background: -moz-linear-gradient(top,  #e3e9f6 0%, #e7ecf7 14%, #ffffff 64%, #ffffff 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3e9f6), color-stop(14%,#e7ecf7), color-stop(64%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #e3e9f6 0%,#e7ecf7 14%,#ffffff 64%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #e3e9f6 0%,#e7ecf7 14%,#ffffff 64%,#ffffff 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #e3e9f6 0%,#e7ecf7 14%,#ffffff 64%,#ffffff 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #e3e9f6 0%,#e7ecf7 14%,#ffffff 64%,#ffffff 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e9f6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: rgb(227, 233, 246); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(227, 233, 246) 0%, rgb(231, 236, 247) 14%, rgb(255, 255, 255) 64%, rgb(255, 255, 255) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(227, 233, 246)), color-stop(14%,rgb(231, 236, 247)), color-stop(64%,rgb(255, 255, 255)), color-stop(100%,rgb(255, 255, 255))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* W3C */
 	width: 100%;
 	background-repeat: no-repeat;
 }
 
 h1 {
-	font-family: Tahoma, sans-serif; 
-	font-size: 55px;
-	font-weight: 400;
+	font: 400 55px Tahoma, sans-serif; 
 	color:rgb(1,124,175);
 	text-shadow: 2px 2px 3px rgb(200,200,200);
 	letter-spacing: -1.2px;
@@ -37,9 +34,7 @@ h1 {
 
 h2 {
 	color: rgb(137,190,4);
-	font-family: Arial, sans-serif; 
-	font-size: 32px;
-	font-weight: 400;
+	font: 400 32px Arial, sans-serif; 
 	position: relative;
 	width: 500px;
 	line-height: 40px;
@@ -53,9 +48,7 @@ h2 span{
 
 h3 {
 	color: rgb(137,190,4);
-	font-family: Arial, sans-serif; 
-	font-size: 16px;
-	font-weight: 400;
+	font: 400 16px Arial, sans-serif; 
 }
 
 a:visited {
@@ -70,13 +63,14 @@ span {
 
 #wrapper {
 	width: 810px;
-	background-color: white;
-	margin:30px auto;
+	background-color: rgb(255, 255, 255);
+	margin: 30px auto;
 	-moz-border-radius: 15px 0px 15px 15px;
 	border-radius: 15px 0px 15px 15px;
 	padding-left: 38px;
 	padding-bottom:40px;
 	box-shadow: 2px 0px 20px rgb(200,200,200);
+    background: rgb(255,255,255) url(02.png) 100% 20% no-repeat;
 }
 
 #wrapper h1 {
@@ -91,7 +85,6 @@ header {
 
 #product-desc {
 	width: 40%;
-	height: auto;
 	float: left;
     position: relative;
     z-index: 10;
@@ -101,8 +94,7 @@ header {
 	color: rgb(153,153,153);
 	display: block;
 	margin-top: 15px;
-	font-family: Arial, sans-serif;
-	font-size: 14px;
+	font: 14px Arial, sans-serif;
     line-height: 17px;
 }
 
@@ -132,20 +124,14 @@ header {
 	display: inline-block;
     position: relative;
 	width: 60%;
-	background: url(02.png);
-	background-repeat: no-repeat;
-	background-position: top right;
 	text-align: center;
-	background-size: 110%;
 	vertical-align: center;
 	min-height: 370px;
 }
 
 #product-img a span {
-    background-image: url(07.png);
-    background-position: 60%;
-    background-size:11px; 
-    background-repeat:no-repeat;
+    background: url(07.png) 60% / 11px no-repeat;
+
 }
 
 
@@ -175,8 +161,7 @@ header {
 
 a {
 	color: rgb(83,149,208);
-	font-size: 12px;
-	font-family: Arial, sans-serif;
+	font: 12px Arial, sans-serif;
 	margin-top: 9px;
     display: block;
 }
@@ -187,10 +172,8 @@ a span {
 }
 
 .product .link span {
-	font-family: Verdana, sans-serif;
+	font: 12px Verdana, sans-serif;
 	display: inline-block;
-	font-size: 12px;
-
 
 
 }
@@ -205,9 +188,8 @@ a span {
 
 .subheader {
 	color: rgb(1,134,182);
-	font-family: Arial, sans-serif; 
-	font-size: 16px;
-	font-weight: 400;
+	font: 400 16px Arial, sans-serif; 
+	
 }
 
 
@@ -257,7 +239,6 @@ a span {
 	background: -o-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f94e1', endColorstr='#014cbb',GradientType=0 ); /* IE6-9 */
 	box-shadow: 0px 0px 0px 4px rgba(51, 51, 51, 0.37);
 }
 
@@ -265,12 +246,12 @@ a span {
 	display: inline-block;
 	width: 106px;
 	margin-left: 7px;
-	color:white;
+	color: rgb(255,255,255);
 }
 
 .price span strong {
 	font-size: 31px;
-	color: white;
+	color: rgb(255,255,255);
 }
 
 .price .spantext span {
@@ -280,7 +261,6 @@ a span {
 .price .arrow {
 
 	width: 12px !important;
-	height: auto!important;
 	position: static!important;
 
 }
@@ -334,25 +314,20 @@ a span {
 /* Link tooterea pildi peal */
 
 .nuncan {
-	padding: 3px 4px;
+	padding: 2px 4px;
 	position: absolute;
-	background: #456ACF;
+	background: rgb(69, 106, 207) url(08.png) 90% / 11px no-repeat;
 	box-shadow: 0px 0px 0px 2px rgba(51, 51, 51, 0.37);
 	width: 66px;
-	color: #FFF;
-	font-size: 12px;
+	color: rgb(255,255,255);
 	border-radius: 5px 0px 5px 5px;
-	font-family: Arial, sans-serif;
+	font: 12px Arial, sans-serif;
 	height: 18px;
-    background-image: url(08.png);
-    background-position: 90%;
-    background-size:11px; 
-    background-repeat:no-repeat;
+   
 }
 
 .arrow2 {
 	height: 12px;
-	width: auto;
 	position: relative;
 	font-family: Arial, sans-serif!important;
 	margin-left: -2px;
