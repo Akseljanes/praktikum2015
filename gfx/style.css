@@ -14,20 +14,20 @@ html {
 }
 
 body {
-	background: rgb(227, 233, 246); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgb(227, 233, 246) 0%, rgb(231, 236, 247) 14%, rgb(255, 255, 255) 64%, rgb(255, 255, 255) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(227, 233, 246)), color-stop(14%,rgb(231, 236, 247)), color-stop(64%,rgb(255, 255, 255)), color-stop(100%,rgb(255, 255, 255))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); /* W3C */
+	background: rgb(227, 233, 246); 
+	background: -moz-linear-gradient(top,  rgb(227, 233, 246) 0%, rgb(231, 236, 247) 14%, rgb(255, 255, 255) 64%, rgb(255, 255, 255) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(227, 233, 246)), color-stop(14%,rgb(231, 236, 247)), color-stop(64%,rgb(255, 255, 255)), color-stop(100%,rgb(255, 255, 255))); 
+	background: -webkit-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
+	background: -o-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
+	background: -ms-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
+	background: linear-gradient(to bottom,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
 	width: 100%;
 	background-repeat: no-repeat;
 }
 
 h1 {
 	font: 400 55px Tahoma, sans-serif; 
-	color:rgb(1,124,175);
+	color: rgb(1,124,175);
 	text-shadow: 2px 2px 3px rgb(200,200,200);
 	letter-spacing: -1.2px;
 }
@@ -36,7 +36,7 @@ h2 {
 	color: rgb(137,190,4);
 	font: 400 32px Arial, sans-serif; 
 	position: relative;
-	width: 500px;
+	width: 400px;
 	line-height: 40px;
 	
 }
@@ -49,6 +49,10 @@ h2 span{
 h3 {
 	color: rgb(137,190,4);
 	font: 400 16px Arial, sans-serif; 
+}
+
+h4 {
+    color: rgb(255,255,255);
 }
 
 a:visited {
@@ -68,7 +72,7 @@ span {
 	-moz-border-radius: 15px 0px 15px 15px;
 	border-radius: 15px 0px 15px 15px;
 	padding-left: 38px;
-	padding-bottom:40px;
+	padding-bottom: 40px;
 	box-shadow: 2px 0px 20px rgb(200,200,200);
     background: rgb(255,255,255) url(02.png) 100% 20% no-repeat;
 }
@@ -129,9 +133,8 @@ header {
 	min-height: 370px;
 }
 
-#product-img a span {
+#product-img a p{
     background: url(07.png) 60% / 11px no-repeat;
-
 }
 
 
@@ -140,21 +143,19 @@ header {
     top: -2px; 
     position: relative; 
     word-spacing: -2px;
-
 }
 
 #product-img img{
-	top:22px;
-	left:-31px; 
+	top: 22px;
+	left: -31px; 
 	position: relative;
 	width: 356px;
 	height: 288px;
 }
 
 #product-img a span {
-    position:absolute;
-    bottom:4px;
-
+    position: absolute;
+    bottom: 4px;
 }
 
 /* Lingid */
@@ -164,24 +165,22 @@ a {
 	font: 12px Arial, sans-serif;
 	margin-top: 9px;
     display: block;
+    text-decoration: none;
 }
 
 a span {
     display: inline-block;
-
 }
 
 .product .link span {
 	font: 12px Verdana, sans-serif;
 	display: inline-block;
-
-
 }
+
 .product .link {
 	display: block;
 	position: relative;
 	z-index: 10;
-	
 }
 
 /* Tooterea info */
@@ -189,7 +188,6 @@ a span {
 .subheader {
 	color: rgb(1,134,182);
 	font: 400 16px Arial, sans-serif; 
-	
 }
 
 
@@ -202,18 +200,20 @@ a span {
 	position: relative;
 }
 
-
-.product_info span {
-
-	display: block;
-}
-
 .product_info {
 	
 	position: absolute;
 	bottom: 0;
 	font-size: 13px;
     bottom: 8px;
+}
+
+.product_info p {
+    font-family: Arial, sans-serif;
+}
+
+.break_line {
+    margin-top: 13px;
 }
 
 .info {
@@ -232,85 +232,90 @@ a span {
     height: 120px;
     border-radius: 5px 0px 15px 15px;
 
-    background: rgb(79,148,225); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(79,148,225,1) 0%, rgba(79,148,225,1) 63%, rgba(1,76,187,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,148,225,1)), color-stop(63%,rgba(79,148,225,1)), color-stop(100%,rgba(1,76,187,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); /* W3C */
+    background: rgb(79,148,225);
+	background: -moz-linear-gradient(top, rgba(79,148,225,1) 0%, rgba(79,148,225,1) 63%, rgba(1,76,187,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,148,225,1)), color-stop(63%,rgba(79,148,225,1)), color-stop(100%,rgba(1,76,187,1))); 
+	background: -webkit-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); 
+	background: -o-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%);
+	background: -ms-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%);
+	background: linear-gradient(to bottom, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); 
 	box-shadow: 0px 0px 0px 4px rgba(51, 51, 51, 0.37);
 }
 
-.price span {
-	display: inline-block;
+.price p {
 	width: 106px;
 	margin-left: 7px;
 	color: rgb(255,255,255);
+    font-family: Arial, sans-serif;
 }
 
-.price span strong {
-	font-size: 31px;
+.price h4 {
+    font-family: Arial, sans-serif;
+}
+
+.price h4 strong {
+	font-size: 36px;
 	color: rgb(255,255,255);
+    font-family: Arial, sans-serif;
+    font-weight: 400;
 }
 
-.price .spantext span {
+.price .spantext p {
 	font-size: 10px;
+    line-height: 14px;
 }
 
 .price .arrow {
-
 	width: 12px !important;
 	position: static!important;
-
 }
+
+.price a p {
+    font-size: 16px;
+    margin-top: 13px;
+}
+
 /* Individuaalsed tooted */
 
 #printer img {
     top: -5px; 
     position: relative; 
     left: 21px;
-
 }
 
 #projektor img {
     position: relative; 
     top: -19px; 
     left: -13px;
-
 }
 
 #monitor img {
-    height:165px; 
-    width:169px; 
+    height: 165px; 
+    width: 169px; 
     left: 16px; 
     position: relative;
     top: 2px;
-
 }
 
 #printer {
     margin-left: 3px;
-
 }
 
 #printer .nuncan {
     top: 163px;
     left: 101px;
-
 }
 
 #projektor .nuncan {
     top: 175px; 
     left: 88px;
-
 }
 
 #monitor .nuncan {
     top: 136px; 
     left: 133px;
-
 }
+
 /* Link tooterea pildi peal */
 
 .nuncan {
@@ -323,7 +328,6 @@ a span {
 	border-radius: 5px 0px 5px 5px;
 	font: 12px Arial, sans-serif;
 	height: 18px;
-   
 }
 
 .arrow2 {
@@ -343,12 +347,13 @@ footer {
 	margin-left: 3px;
 }
 
-footer span {
+footer p {
 	color: rgb(153,153,153);
-	display:block;
+	display: block;
 	font-size: 12px;
-    line-height: 17px;
+    line-height: 24px;
     word-spacing: 1px;
+    font-family: Arial, sans-serif;
 }
 
 footer a {
