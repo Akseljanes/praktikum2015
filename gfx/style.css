@@ -15,14 +15,13 @@ html {
 
 body {
 	background: rgb(227, 233, 246); 
-	background: -moz-linear-gradient(top,  rgb(227, 233, 246) 0%, rgb(231, 236, 247) 14%, rgb(255, 255, 255) 64%, rgb(255, 255, 255) 100%); 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(227, 233, 246)), color-stop(14%,rgb(231, 236, 247)), color-stop(64%,rgb(255, 255, 255)), color-stop(100%,rgb(255, 255, 255))); 
-	background: -webkit-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
-	background: -o-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
-	background: -ms-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
-	background: linear-gradient(to bottom,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%); 
+	background: -moz-linear-gradient(top,  rgb(227, 233, 246) 0%, rgb(231, 236, 247) 14%, rgb(255, 255, 255) 64%, rgb(255, 255, 255) 100%) no-repeat; 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(227, 233, 246)), color-stop(14%,rgb(231, 236, 247)), color-stop(64%,rgb(255, 255, 255)), color-stop(100%,rgb(255, 255, 255))) no-repeat; 
+	background: -webkit-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
+	background: -o-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
+	background: -ms-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
+	background: linear-gradient(to bottom,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
 	width: 100%;
-	background-repeat: no-repeat;
 }
 
 h1 {
@@ -30,6 +29,7 @@ h1 {
 	color: rgb(1,124,175);
 	text-shadow: 2px 2px 3px rgb(200,200,200);
 	letter-spacing: -1.2px;
+    display: inline-block;
 }
 
 h2 {
@@ -38,7 +38,6 @@ h2 {
 	position: relative;
 	width: 400px;
 	line-height: 40px;
-	
 }
 
 h2 span{
@@ -64,16 +63,14 @@ span {
 	font-family: Arial, sans-serif;
 }
 
-
 #wrapper {
 	width: 810px;
-	background-color: rgb(255, 255, 255);
 	margin: 30px auto;
-	-moz-border-radius: 15px 0px 15px 15px;
-	border-radius: 15px 0px 15px 15px;
+	-moz-border-radius: 15px 0 15px 15px;
+	border-radius: 15px 0 15px 15px;
 	padding-left: 38px;
 	padding-bottom: 40px;
-	box-shadow: 2px 0px 20px rgb(200,200,200);
+	box-shadow: 2px 0 20px rgb(200,200,200);
     background: rgb(255,255,255) url(02.png) 100% 20% no-repeat;
 }
 
@@ -81,16 +78,11 @@ span {
 	margin-top: 18px
 }
 
-header {
-	display: inline-block;
-}
-
 /* Tootetutvustus */
 
 #product-desc {
 	width: 40%;
 	float: left;
-    position: relative;
     z-index: 10;
 }
 
@@ -106,7 +98,6 @@ header {
     display: inline-block;
     margin-top: 0;
     letter-spacing: 1px;
-
 }
 
 #product-desc h2 {
@@ -133,10 +124,9 @@ header {
 	min-height: 370px;
 }
 
-#product-img a p{
+#product-img p a {
     background: url(07.png) 60% / 11px no-repeat;
 }
-
 
 
 #product-img .spantext {
@@ -201,7 +191,6 @@ a span {
 }
 
 .product_info {
-	
 	position: absolute;
 	bottom: 0;
 	font-size: 13px;
@@ -223,15 +212,13 @@ a span {
 /* Laptopi peal olev infobox */
 
 .price {
-	
     text-align: left;
     padding: 3px 4px;
 	position: absolute;
 	left: 278px;
 	top: 100px;
     height: 120px;
-    border-radius: 5px 0px 15px 15px;
-
+    border-radius: 5px 0 15px 15px;
     background: rgb(79,148,225);
 	background: -moz-linear-gradient(top, rgba(79,148,225,1) 0%, rgba(79,148,225,1) 63%, rgba(1,76,187,1) 100%); 
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,148,225,1)), color-stop(63%,rgba(79,148,225,1)), color-stop(100%,rgba(1,76,187,1))); 
@@ -239,7 +226,7 @@ a span {
 	background: -o-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%);
 	background: -ms-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%);
 	background: linear-gradient(to bottom, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); 
-	box-shadow: 0px 0px 0px 4px rgba(51, 51, 51, 0.37);
+	box-shadow: 0 0 0 4px rgba(51, 51, 51, 0.37);
 }
 
 .price p {
@@ -270,9 +257,10 @@ a span {
 	position: static!important;
 }
 
-.price a p {
+.price p a {
     font-size: 16px;
     margin-top: 13px;
+    color: rgb(255,255,255);
 }
 
 /* Individuaalsed tooted */
@@ -283,7 +271,7 @@ a span {
     left: 21px;
 }
 
-#projektor img {
+#projector img {
     position: relative; 
     top: -19px; 
     left: -13px;
@@ -306,7 +294,7 @@ a span {
     left: 101px;
 }
 
-#projektor .nuncan {
+#projector .nuncan {
     top: 175px; 
     left: 88px;
 }
@@ -322,12 +310,17 @@ a span {
 	padding: 2px 4px;
 	position: absolute;
 	background: rgb(69, 106, 207) url(08.png) 90% / 11px no-repeat;
-	box-shadow: 0px 0px 0px 2px rgba(51, 51, 51, 0.37);
+	box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.37);
 	width: 66px;
 	color: rgb(255,255,255);
-	border-radius: 5px 0px 5px 5px;
+	border-radius: 5px 0 5px 5px;
 	font: 12px Arial, sans-serif;
 	height: 18px;
+}
+
+.nuncan a {
+    margin-top: 0;
+    color: rgb(255,255,255);
 }
 
 .arrow2 {
@@ -337,7 +330,7 @@ a span {
 	margin-left: -2px;
 }
 
-.nuncan span {
+.nuncan a span {
 	line-height: 12px;
 }
 
@@ -349,7 +342,6 @@ footer {
 
 footer p {
 	color: rgb(153,153,153);
-	display: block;
 	font-size: 12px;
     line-height: 24px;
     word-spacing: 1px;
@@ -361,4 +353,28 @@ footer a {
 	display: block;
 	font-size: 12px;
 }
-								
+
+.nuncan:hover,
+.nuncan:focus {
+    background-color: rgb(6, 91, 167);
+}
+
+a:hover, 
+a:focus {
+    color: rgb(49, 151, 242);
+}
+
+.nuncan a:hover, 
+.nuncan a:focus {
+    color: rgb(255,255,255);
+}
+
+.price p a:hover,
+.price p a:focus {
+    color: rgb(68, 157, 234);
+}
+
+.product-img p a:hover,
+.product-img p a:focus {
+    color: rgb(68, 157, 234);
+}

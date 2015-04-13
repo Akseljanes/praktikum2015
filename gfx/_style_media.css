@@ -1,20 +1,19 @@
 @media print {
     
-    
     img {
-    display: none;
+        display: none;
     }
     
     h1, h2, h3, p, span, .link {
-    color: black !important;
+        color: black !important;
     }
     
     body, #gradient, .price, .nuncan {
         background: white;
     }
+    
     #wrapper {
-    box-shadow: none;
+        box-shadow: none;
         border: none;
     }
-    
 }
