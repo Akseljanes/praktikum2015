@@ -126,6 +126,7 @@ span {
 
 #product-img p a {
     background: url(07.png) 60% / 11px no-repeat;
+    margin-top: 10px;
 }
 
 
@@ -334,6 +335,11 @@ a span {
 	line-height: 12px;
 }
 
+.product a {
+    position: relative;
+    z-index: 1;
+}
+
 footer {
 	display: inline-block;
 	margin-top: -31px;
@@ -371,10 +377,5 @@ a:focus {
 
 .price p a:hover,
 .price p a:focus {
-    color: rgb(68, 157, 234);
-}
-
-.product-img p a:hover,
-.product-img p a:focus {
-    color: rgb(68, 157, 234);
+    text-decoration: underline;
 }
