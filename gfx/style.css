@@ -1,16 +1,11 @@
 /*Aksel Jänes*/
 
 * {
-  	padding: 0;
-  	margin: 0;
-  	-moz-box-sizing: border-box;
-  	-webkit-box-sizing: border-box;
-  	box-sizing: border-box;
-}
-
-html {
-	height: 100%;
-	width: 100%;
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +17,7 @@ body {
 	background: -ms-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
 	background: linear-gradient(to bottom,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
 	width: 100%;
+    font: Arial, sans-serif;
 }
 
 h1 {
@@ -40,9 +36,8 @@ h2 {
 	line-height: 40px;
 }
 
-h2 span{
+h2 span {
 	color: rgb(1,134,182);
-	font-family: Arial, sans-serif; 
 }
 
 h3 {
@@ -57,10 +52,6 @@ h4 {
 a:visited {
     text-decoration: none;
     color: rgb(83,149,208);
-}
-
-span {
-	font-family: Arial, sans-serif;
 }
 
 #wrapper {
@@ -90,7 +81,7 @@ span {
 	color: rgb(153,153,153);
 	display: block;
 	margin-top: 15px;
-	font: 14px Arial, sans-serif;
+	font-size: 14px;
     line-height: 17px;
 }
 
@@ -111,7 +102,6 @@ span {
 	width: 280px;
 	word-spacing: -1px;
 	margin-top: 3px;
-	display: inline-block;
     margin-bottom: 86px;
 }
 
@@ -120,23 +110,20 @@ span {
     position: relative;
 	width: 60%;
 	text-align: center;
-	vertical-align: center;
 	min-height: 370px;
 }
 
-#product-img p a {
+#product-img a {
     background: url(07.png) 60% / 11px no-repeat;
     margin-top: 10px;
 }
 
-
 #product-img .spantext {
     top: -2px; 
-    position: relative; 
     word-spacing: -2px;
 }
 
-#product-img img{
+#product-img img {
 	top: 22px;
 	left: -31px; 
 	position: relative;
@@ -144,43 +131,27 @@ span {
 	height: 288px;
 }
 
-#product-img a span {
-    position: absolute;
-    bottom: 4px;
-}
-
 /* Lingid */
 
 a {
 	color: rgb(83,149,208);
-	font: 12px Arial, sans-serif;
-	margin-top: 9px;
-    display: block;
+	font-size: 12px;
+    margin-top: 9px; 
     text-decoration: none;
+    display: block;
 }
 
-a span {
-    display: inline-block;
-}
-
-.product .link span {
-	font: 12px Verdana, sans-serif;
-	display: inline-block;
-}
-
-.product .link {
-	display: block;
-	position: relative;
-	z-index: 10;
+a:hover, 
+a:focus {
+    color: rgb(4, 67, 154);
 }
 
 /* Tooterea info */
 
 .subheader {
 	color: rgb(1,134,182);
-	font: 400 16px Arial, sans-serif; 
+	font-size: 16px;
 }
-
 
 .product {
 	display: inline-block;
@@ -191,23 +162,19 @@ a span {
 	position: relative;
 }
 
-.product_info {
+.product-info {
 	position: absolute;
-	bottom: 0;
 	font-size: 13px;
     bottom: 8px;
 }
 
-.product_info p {
-    font-family: Arial, sans-serif;
+.product a {
+    position: relative;
+    z-index: 1;
 }
 
-.break_line {
+.break-line {
     margin-top: 13px;
-}
-
-.info {
-	height: 100%;
 }
 
 /* Laptopi peal olev infobox */
@@ -234,17 +201,11 @@ a span {
 	width: 106px;
 	margin-left: 7px;
 	color: rgb(255,255,255);
-    font-family: Arial, sans-serif;
-}
-
-.price h4 {
-    font-family: Arial, sans-serif;
 }
 
 .price h4 strong {
 	font-size: 36px;
 	color: rgb(255,255,255);
-    font-family: Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -258,10 +219,15 @@ a span {
 	position: static!important;
 }
 
-.price p a {
+.price a {
     font-size: 16px;
     margin-top: 13px;
     color: rgb(255,255,255);
+}
+
+.price a:hover,
+.price a:focus {
+    text-decoration: underline;
 }
 
 /* Individuaalsed tooted */
@@ -290,24 +256,24 @@ a span {
     margin-left: 3px;
 }
 
-#printer .nuncan {
+#printer .nuncan-button {
     top: 163px;
     left: 101px;
 }
 
-#projector .nuncan {
+#projector .nuncan-button {
     top: 175px; 
     left: 88px;
 }
 
-#monitor .nuncan {
+#monitor .nuncan-button{
     top: 136px; 
     left: 133px;
 }
 
-/* Link tooterea pildi peal */
+/* Nuncani nupp tooterea pildi peal */
 
-.nuncan {
+.nuncan-button {
 	padding: 2px 4px;
 	position: absolute;
 	background: rgb(69, 106, 207) url(08.png) 90% / 11px no-repeat;
@@ -315,35 +281,40 @@ a span {
 	width: 66px;
 	color: rgb(255,255,255);
 	border-radius: 5px 0 5px 5px;
-	font: 12px Arial, sans-serif;
+	font-size: 12px;
 	height: 18px;
 }
 
-.nuncan a {
+.nuncan-button a {
     margin-top: 0;
+    color: rgb(255,255,255);
+}
+
+.nuncan-button:hover,
+.nuncan-button:focus {
+    background-color: rgb(4, 67, 154);
+}
+
+.nuncan-button a:hover, 
+.nuncan-button a:focus {
     color: rgb(255,255,255);
 }
 
 .arrow2 {
 	height: 12px;
 	position: relative;
-	font-family: Arial, sans-serif!important;
 	margin-left: -2px;
 }
 
-.nuncan a span {
+.nuncan-button span {
 	line-height: 12px;
-}
-
-.product a {
-    position: relative;
-    z-index: 1;
 }
 
 footer {
 	display: inline-block;
 	margin-top: -31px;
 	margin-left: 3px;
+    font-family: Arial, sans-serif; 
 }
 
 footer p {
@@ -351,31 +322,10 @@ footer p {
 	font-size: 12px;
     line-height: 24px;
     word-spacing: 1px;
-    font-family: Arial, sans-serif;
 }
 
 footer a {
 	margin-top: 60px;
 	display: block;
 	font-size: 12px;
-}
-
-.nuncan:hover,
-.nuncan:focus {
-    background-color: rgb(6, 91, 167);
-}
-
-a:hover, 
-a:focus {
-    color: rgb(49, 151, 242);
-}
-
-.nuncan a:hover, 
-.nuncan a:focus {
-    color: rgb(255,255,255);
-}
-
-.price p a:hover,
-.price p a:focus {
-    text-decoration: underline;
 }
