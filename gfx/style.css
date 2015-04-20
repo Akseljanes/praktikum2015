@@ -1,152 +1,135 @@
-/*Aksel Jänes*/
+/**Aksel Jänes*/
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	background: rgb(227, 233, 246); 
-	background: -moz-linear-gradient(top,  rgb(227, 233, 246) 0%, rgb(231, 236, 247) 14%, rgb(255, 255, 255) 64%, rgb(255, 255, 255) 100%) no-repeat; 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(227, 233, 246)), color-stop(14%,rgb(231, 236, 247)), color-stop(64%,rgb(255, 255, 255)), color-stop(100%,rgb(255, 255, 255))) no-repeat; 
-	background: -webkit-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
-	background: -o-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
-	background: -ms-linear-gradient(top,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
-	background: linear-gradient(to bottom,  rgb(227, 233, 246) 0%,rgb(231, 236, 247) 14%,rgb(255, 255, 255) 64%,rgb(255, 255, 255) 100%) no-repeat; 
 	width: 100%;
+	background: #e3e9f6; 
+	background: linear-gradient(to bottom, #e3e9f6 0%,#e7ecf7 14%,#ffffff 64%,#ffffff 100%) no-repeat; 
     font: Arial, sans-serif;
 }
 
 h1 {
-	font: 400 55px Tahoma, sans-serif; 
-	color: rgb(1,124,175);
-	text-shadow: 2px 2px 3px rgb(200,200,200);
+	text-shadow: 2px 2px 3px #c8c8c8;
 	letter-spacing: -1.2px;
-    display: inline-block;
+	color: #017caf;
+	font: 400 55px Tahoma, sans-serif; 
 }
 
 h2 {
-	color: rgb(137,190,4);
-	font-size: 32px; 
-	font-weight: 400;
-	position: relative;
-	width: 400px;
+    width: 400px;
 	line-height: 40px;
+	color: #89be04;
+	font-weight: 400;
+	font-size: 32px; 
 }
 
 h2 span {
-	color: rgb(1,134,182);
+	color: #0186b6;
 }
 
 h3 {
-	color: rgb(137,190,4);
-	font-size: 16px;
+	color: #89be04;
     font-weight: 400;
+	font-size: 16px;
 }
 
 h4 {
-    color: rgb(255,255,255);
-}
-
-a:visited {
-    text-decoration: none;
-    color: rgb(83,149,208);
+    color: #ffffff;
 }
 
 #wrapper {
 	width: 810px;
 	margin: 30px auto;
-	border-radius: 15px 0 15px 15px;
-	padding-left: 38px;
 	padding-bottom: 40px;
-	box-shadow: 2px 0 20px rgb(200,200,200);
-    background: rgb(255,255,255) url(02.png) 100% 20% no-repeat;
+    padding-top: 18px;
+    padding-left: 38px;
+	border-radius: 15px 0 15px 15px;
+    background: #ffffff url(02.png) 100% 20% no-repeat;
+    box-shadow: 2px 0 20px #c8c8c8;
 }
 
 #wrapper h1 {
-	margin-top: 18px
+	margin-top: 0;
 }
 
-/* Tootetutvustus */
+/** Product information */
 
 #product-desc {
-	width: 40%;
 	float: left;
+	width: 40%;
     z-index: 10;
 }
 
 #product-desc p {
-	color: rgb(153,153,153);
-	display: block;
 	margin-top: 15px;
-	font-size: 14px;
     line-height: 17px;
+    color: #999999;
+	font-size: 14px;
 }
 
 #product-desc a {
     display: inline-block;
     margin-top: 0;
-    letter-spacing: 1px;
 }
 
 #product-desc h2 {
 	margin-top: 13px;
 	margin-right: 5px;
-	letter-spacing: -0.2px;
-	word-spacing: -5px;
 }
 
-.description {
+.desc {
 	width: 280px;
-	word-spacing: -1px;
 	margin-top: 3px;
     margin-bottom: 86px;
 }
 
-#product-display{
+#product-display {
 	display: inline-block;
     position: relative;
-	width: 60%;
+    width: 60%;
 	min-height: 370px;
 }
 
 #product-display a {
-    background: url(07.png) 60% / 11px no-repeat;
     margin-top: 10px;
-}
-
-#product-display .spantext {
-    top: -2px; 
-    word-spacing: -2px;
+    background: url(07.png) 60% / 11px no-repeat;
 }
 
 #product-display img {
+	position: relative;
 	top: 22px;
 	left: -31px; 
-	position: relative;
 }
 
 .product-img {
     text-align: center;
 }
 
-/* Lingid */
+/** Links */
 
 a {
-	color: rgb(83,149,208);
-	font-size: 12px;
-    margin-top: 9px; 
     text-decoration: none;
+	color: #5395d0;
+	font-size: 12px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #5395d0;
 }
 
 a:hover, 
 a:focus {
-    color: rgb(4, 67, 154);
+    color: #04439a;
 }
 
 a:after {
-    content: "»";
+    content: " »";
 }
 
 .nuncan-button a:after {
@@ -157,27 +140,27 @@ a:after {
     content: none;
 }
 
-/* Tooterea info */
+/** Product info */
 
 .subheader {
-	color: rgb(1,134,182);
-	font-size: 16px;
     margin-bottom: 6px;
+	color: #0186b6;
+	font-size: 16px;
 }
 
 .product {
 	display: inline-block;
-	width: 30%;
-	margin: 14px 13px;
-	height: 347px;
-	vertical-align: top;
 	position: relative;
+    width: 30%;
+    height: 347px;
+	margin: 14px 13px;
+	vertical-align: top;
 }
 
 .product-info {
 	position: absolute;
-	font-size: 13px;
     bottom: 8px;
+	font-size: 13px;
 }
 
 .pricing {
@@ -185,55 +168,50 @@ a:after {
 }
 
 .pricing span {
-    text-decoration: line-through;
     display: block;
+    text-decoration: line-through;
 }
 
-/* Laptopi peal olev infobox */
+/** Infobox on top of the Laptop */
 
 .price {
-    padding: 3px 4px;
-	position: absolute;
-	left: 278px;
+    position: absolute;
 	top: 100px;
+	left: 278px;
+    padding: 3px 4px;
     border-radius: 5px 0 15px 15px;
-    background: rgb(79,148,225);
-	background: -moz-linear-gradient(top, rgba(79,148,225,1) 0%, rgba(79,148,225,1) 63%, rgba(1,76,187,1) 100%); 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,148,225,1)), color-stop(63%,rgba(79,148,225,1)), color-stop(100%,rgba(1,76,187,1))); 
-	background: -webkit-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); 
-	background: -o-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%);
-	background: -ms-linear-gradient(top, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%);
-	background: linear-gradient(to bottom, rgba(79,148,225,1) 0%,rgba(79,148,225,1) 63%,rgba(1,76,187,1) 100%); 
-	box-shadow: 0 0 0 4px rgba(51, 51, 51, 0.37);
+    background: #4f94e1;
+	background: linear-gradient(to bottom, #4f94e1 0%,#4f94e1 63%,#014cbb 100%); 
+    box-shadow: 0 0 0 4px rgba(51, 51, 51, 0.37);
 }
 
 .price p {
 	width: 106px;
 	margin-left: 7px;
-	color: rgb(255,255,255);
+	color: #ffffff;
 }
 
-.price h4 strong {
-	font-size: 36px;
-	color: rgb(255,255,255);
+.price strong {
+	color: #ffffff;
     font-weight: 400;
+	font-size: 36px;
 }
 
-.price .spantext p {
+.price p {
+    line-height: 15px;
 	font-size: 10px;
-    line-height: 14px;
 }
 
 .price .arrow {
-	width: 12px !important;
-	position: static!important;
+    position: static;
+	width: 12px;
 }
 
 .price a {
-    font-size: 16px;
-    margin-top: 13px;
-    color: rgb(255,255,255);
     display: block;
+    margin-top: 13px;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 .price a:hover,
@@ -241,11 +219,11 @@ a:after {
     text-decoration: underline;
 }
 
-/* Individuaalsed tooted */
+/** Individual products */
 
 #printer img {
-    top: -5px; 
     position: relative; 
+    top: -5px; 
     left: 21px;
 }
 
@@ -257,13 +235,13 @@ a:after {
 }
 
 #monitor img {
-    left: 16px; 
     position: relative;
     top: 2px;
+    left: 16px; 
 }
 
 #printer {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 #printer .nuncan-button {
@@ -276,44 +254,49 @@ a:after {
     left: 88px;
 }
 
-#monitor .nuncan-button{
+#monitor .nuncan-button {
     top: 136px; 
     left: 133px;
 }
 
-/* Nuncani nupp tooterea pildi peal */
+/** Nuncani button */
 
 .nuncan-button {
-	padding: 2px 4px;
 	position: absolute;
-	background: rgb(69, 106, 207) url(08.png) 90% / 11px no-repeat;
-	box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.37);
-	color: rgb(255,255,255);
-	border-radius: 5px 0 5px 5px;
-	font-size: 12px;
-    padding-right: 18px;
-    font-weight: bold
 }
 
 .nuncan-button a {
     margin-top: 0;
-    color: rgb(255,255,255);
+    color: #ffffff;
+    padding: 2px 4px;
+    padding-right: 18px;
+    background: #456acf url(08.png) 91% 60%/ 11px no-repeat;
+    font-weight: bold;
+	font-size: 12px;
+    border-radius: 5px 0 5px 5px;
+	box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.37);
 }
 
-.nuncan-button:hover,
-.nuncan-button:focus {
-    background-color: rgb(4, 67, 154);
+.ie8 .nuncan-button a {
+    margin-top: 0;
+    background: #456acf;
+}
+
+.nuncan-button a:hover,
+.nuncan-button a:focus {
+    background-color: #04439a;
 }
 
 .nuncan-button a:hover, 
 .nuncan-button a:focus {
-    color: rgb(255,255,255);
+    color: #ffffff;
 }
 
 .arrow2 {
-	height: 12px;
 	position: relative;
+    height: 12px;
 	margin-left: -2px;
+    
 }
 
 .nuncan-button span {
@@ -321,21 +304,18 @@ a:after {
 }
 
 footer {
-	display: inline-block;
 	margin-top: -31px;
 	margin-left: 3px;
-    font-family: Arial, sans-serif; 
 }
 
 footer p {
-	color: rgb(153,153,153);
-	font-size: 12px;
     line-height: 24px;
-    word-spacing: 1px;
+	color: #999999;
+	font-size: 12px;
 }
 
 footer a {
-	margin-top: 60px;
 	display: block;
+	margin-top: 60px;
 	font-size: 12px;
 }
